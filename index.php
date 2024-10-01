@@ -639,7 +639,7 @@ h1 {
 								mysqli_stmt_execute($stmt);          
 								$result = mysqli_stmt_get_result($stmt);    
 								echo '<select class="" name="dep_city" id="w3_country1">
-								<option value="0" selected disabled >Departure</option>';
+								<option value="0" selected disabled >Nơi đi</option>';
 								while ($row = mysqli_fetch_assoc($result)) {
 								echo '<option value='. $row['city']  .'>'. 
 									$row['city'] .'</option>';
@@ -656,7 +656,7 @@ h1 {
 								mysqli_stmt_execute($stmt);          
 								$result = mysqli_stmt_get_result($stmt);    
 								echo '<select value="0" name="arr_city" id="w3_country1">
-								<option selected disabled>Arrival</option>';
+								<option selected disabled>Nơi đến</option>';
 								while ($row = mysqli_fetch_assoc($result)) {
 								echo '<option value='. $row['city']  .'>'. 
 									$row['city'] .'</option>';
